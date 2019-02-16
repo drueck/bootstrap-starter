@@ -1,0 +1,13 @@
+h1 {
+  padding: .5em 0 .2em;
+}
+
+h2 {
+  color: darksalmon;
+  font-style: italic;
+  padding-bottom: .3em;
+}
+
+body {
+  padding-bottom: 5em;
+}

@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+
+    <link rel="stylesheet" href="main.css">
+
+    <title>Index</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">Bootstrap Starter</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="one.html">Page 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="two.html">Page 2</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1>Bootstrap Starter</h1>
+      <p>
+        I just put together a small sample project with a few pages and a bootsrap
+        nav, just as an example of how to structure things for a basic html, css, and js
+        only site that you can run locally. Below is a basic explanation of the html
+        structure, and what goes where. You probably know most of this already, but I
+        figured it wouldn't hurt to put some content in here. :)
+      </p>
+      <h2>About the HTML</h2>
+      <h3>The <code>doctype</code> and opening <code>html</code> tag</h3>
+      <p>
+        You'll notice that each of these html files is nearly identical in structure.
+        They start out with the doctype which tells the browser that we're using html5,
+        essentially. Then starts the html document itself.
+      </p>
+      <h3>The <code>head</code> section</h3>
+      <p>
+        Then in the head, you have a couple of <code>meta</code> tags that
+        bootstrap recommends to help with the responsive design and how it will
+        look on smaller screens. Then you have your stylsheet <code>link</code>s:
+        bootstrap's stylesheet loaded from the web, and then your own styles.
+        You can reference files in the same directory as your html file just by
+        the filename. Finally you have the <code>title</code> tag which sets
+        the title of the browser tab for this page.
+      </p>
+      <h3>The <code>body</code> section</h3>
+      <p>
+        This is where all of your content goes.
+      </p>
+      <p>
+        I started out with a bootstrap nav which looks pretty complicated, but
+        it's mainly because it's responsive. By that I mean that when you make
+        your browser window small, it collapses the menu to the little
+        "hamburger" icon so that it will work on phones and other smaller
+        screen devices. I copied this from the bootstrap docs and deleted some
+        stuff and modified it a bit. This is essentially the same on each of
+        the three pages except for the indication of which link is "active",
+        meaning the current page. I put the <code>nav</code> tag outside of
+        any container divs so that it would fill the whole width of the screen.
+        If you wanted it to only fill the center part, the width of the content,
+        then you'd put it inside the "container" div where this content is.
+      </p>
+      <p>
+        Then I opened a container <code>div</code> for the page content: the
+        <code>h1</code>, <code>h2</code>, and <code>h3</code> heading tags, and
+        the paragraphs here. I put it in the "container" (<code>&lt;div
+        class="container"&gt;</code>) so it would not fill the entire screen,
+        but would rather be centered in the middle. This "container" class is
+        just a bootstrap provided class that gives you that nice layout starting
+        point.
+      </p>
+      <p>
+        Finally at the very bottom of the <code>body</code> section I put the
+        <code>script</code> tags to load the javascript dependencies. This is
+        typically where people put javascript tags so that the browser can
+        render the basic html and css of the page before it has to fetch the
+        javascript. Here I'm including all the stuff that bootstrap javascript
+        uses. This page probably doesn't use much if any of it, but I'm just
+        including it as an example that should work with most bootstrap
+        functionality.
+      </p>
+      <h3>Closing the <code>body</code> and <code>html</code> tags</h3>
+      <p>
+        Lastly we just close the body and html tags, and that's it. Most of
+        the structure of this file is exactly the same as the other html
+        files, so I started off by copying the index to one.html and two.html
+        and then changing some values. If you were working in a framework
+        like Ruby on Rails or even php or a static site generator, you wouldn't
+        have to duplicate so much of the boilerplate, but with flat html
+        files that's how you would do it.
+      </p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
